@@ -1,0 +1,24 @@
+#include<stdio.h>
+#include<conio.h>
+#include<string.h>
+int main()
+{
+	FILE *fp;
+	int j;
+	char str[]={'S','u','n','\0'},rev[10];
+	fp=fopen("1.txt","w");
+	fprintf(fp,"str");
+	fclose;
+	
+	fp=fopen("1.txt","r");
+	fscanf(fp,"%s",&str);
+	printf("ORIGINAL STRING %s\n",str);
+	for(int i=strlen(str)-1;i>=0;i--)
+	{
+		rev[j++]=str[i];
+	}
+	rev[j]='\0';
+	printf("REVERSE STRING %s",rev);
+	fclose(fp);
+	
+}
